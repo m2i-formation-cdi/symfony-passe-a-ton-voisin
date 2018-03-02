@@ -21,7 +21,7 @@
     <schema id="15" parent="1" name="test"/>
     <schema id="16" parent="1" name="turbulents"/>
     <table id="17" parent="2" name="categories"/>
-    <table id="18" parent="2" name="message"/>
+    <table id="18" parent="2" name="messages"/>
     <table id="19" parent="2" name="migration_versions"/>
     <table id="20" parent="2" name="users"/>
     <column id="21" parent="17" name="id">
@@ -77,10 +77,10 @@
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="32" parent="18" name="IDX_B6BD307F12469DE2">
+    <index id="32" parent="18" name="IDX_DB021E9612469DE2">
       <ColNames>category_id</ColNames>
     </index>
-    <index id="33" parent="18" name="IDX_B6BD307FF675F31B">
+    <index id="33" parent="18" name="IDX_DB021E96F675F31B">
       <ColNames>author_id</ColNames>
     </index>
     <key id="34" parent="18" name="PRIMARY">
@@ -88,13 +88,13 @@
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="35" parent="18" name="FK_B6BD307FF675F31B">
+    <foreign-key id="35" parent="18" name="FK_DB021E96F675F31B">
       <ColNames>author_id</ColNames>
       <RefSchemaName>sf_voisin</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="36" parent="18" name="FK_B6BD307F12469DE2">
+    <foreign-key id="36" parent="18" name="FK_DB021E9612469DE2">
       <ColNames>category_id</ColNames>
       <RefSchemaName>sf_voisin</RefSchemaName>
       <RefTableName>categories</RefTableName>

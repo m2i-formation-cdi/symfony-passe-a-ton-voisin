@@ -2,4 +2,22 @@
 
 {% block body %}
 <h1>Home sweet home</h1>
+
+    {{ dump(messageList.get()) }}
+
+    <table class="table table-striped table-bordered table-hover">
+        <tr>
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Catégorie</th>
+        </tr>
+
+        {% for message in messageList.get() %}
+            <tr>
+                <td>{{ message.title }}</td>
+                <td>{{ message.author.name }}</td>
+                <td>{{ message.category.name }}</td>
+            </tr>
+        {% endfor %}
+    </table>
 {% endblock %}

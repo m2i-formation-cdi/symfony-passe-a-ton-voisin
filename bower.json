@@ -1,0 +1,18 @@
+{
+  "name": "passe-a-ton-voisin",
+  "authors": [
+    "moi <moi@moi.com>"
+  ],
+  "description": "Site pour s'amuser avec Symfony 4",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

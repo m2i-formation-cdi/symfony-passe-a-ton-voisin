@@ -2,6 +2,7 @@
 ###> symfony/framework-bundle ###
 .env
 /public/bundles/
+/public/bower_assets/
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
